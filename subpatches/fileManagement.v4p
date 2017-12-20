@@ -1,0 +1,371 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\GIT\baum\subpatches\fileManagement.v4p" systemname="fileManagement" filename="C:\Users\TP-A11\Desktop\weihnachtsbaum\subpatches\fileManagement.v4p" scrollx="256" scrolly="0">
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
+   <BOUNDS type="Node" left="1575" top="390" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1575" top="390" width="4545" height="2265">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="15">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="15" values="..\dds\explosion,..\animations\rocket,..\animations\explosion\esplosione,..\animations\sparks,..\animations\flame,..\animations\atom_front,..\animations\explosionSchraeg,..\animations\fire,..\animations\muzzle,..\animations\explosionBig,..\animations\flameNew,..\animations\smokeNormal,,,">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (String)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1575" top="3300" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1575" top="3300" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output Count" slicecount="1" values="15">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   <PIN pinname="Output 4" visible="1">
+   </PIN>
+   <PIN pinname="Output 5" visible="1">
+   </PIN>
+   <PIN pinname="Output 6" visible="1">
+   </PIN>
+   <PIN pinname="Output 7" visible="1">
+   </PIN>
+   <PIN pinname="Output 8" visible="1">
+   </PIN>
+   <PIN pinname="Output 9" visible="1">
+   </PIN>
+   <PIN pinname="Output 10" visible="1">
+   </PIN>
+   <PIN pinname="Output 11" visible="1">
+   </PIN>
+   <PIN pinname="Output 12" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1351" top="8964" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="dir_explosion">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1501" top="8589" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" visible="1" slicecount="1" values="dir_rocket">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output 1" dstnodeid="2" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output 2" dstnodeid="3" dstpinname="Input Value">
+   </LINK>
+   <BOUNDS type="Window" left="-120" top="0" width="9208" height="8752">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.2">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1681" top="8214" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="dir_explosion2">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="1846" top="7869" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="dir_sparks">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2011" top="7479" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="dir_flame">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output 3" dstnodeid="4" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output 4" dstnodeid="5" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output 5" dstnodeid="6" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="14">
+   <BOUNDS type="Node" left="7185" top="465" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7185" top="465" width="4545" height="2265">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="10" values="..\textures\tree.png,..\textures\ground.png,..\textures\backdrop.png,..\textures\sky.png,..\textures\kugel.png,..\textures\schleife.png,..\textures\sparkle.png,,,">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (String)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="7185" top="3375" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7185" top="3375" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output Count" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   <PIN pinname="Output 4" visible="1">
+   </PIN>
+   <PIN pinname="Output 5" visible="1">
+   </PIN>
+   <PIN pinname="Output 6" visible="1">
+   </PIN>
+   <PIN pinname="Output 7" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="7200" top="5955" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="tex_tree">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="7350" top="5580" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" visible="1" slicecount="1" values="tex_ground">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output 1" dstnodeid="12" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output String" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output 2" dstnodeid="11" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="7530" top="5205" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="tex_backdrop">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="7680" top="4725" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="tex_sky">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output 3" dstnodeid="10" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output 4" dstnodeid="8" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="2146" top="7044" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="dir_atomFront">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="2326" top="6594" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="dir_explosionSchraeg">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output 6" dstnodeid="16" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output 7" dstnodeid="15" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="18">
+   <BOUNDS type="Node" left="12600" top="495" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12600" top="495" width="4545" height="2265">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="10" values="..\audio\explosionCut.wav,audio\plopp.wav,audio\sparkler.flac,audio\nuclearDistance.wav,,,,,,">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (String)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="12660" top="3555" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12660" top="3555" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output Count" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   <PIN pinname="Output 4" visible="1">
+   </PIN>
+   <PIN pinname="Output 5" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="12675" top="5685" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="audio_explosion">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="12825" top="5310" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" visible="1" slicecount="1" values="audio_plopp">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Output 1" dstnodeid="22" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Output 2" dstnodeid="21" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="13005" top="4935" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="audio_sparkler">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="13155" top="4455" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="audio_nuclearDistance">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Output 3" dstnodeid="20" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Output 4" dstnodeid="19" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="23" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="8102" top="4126" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="tex_schleife">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="7845" top="4365" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="tex_kugel">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output 5" dstnodeid="24" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output 6" dstnodeid="25" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="2518" top="6258" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="dir_fire">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output 8" dstnodeid="26" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="2718" top="5874" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="dir_muzzle">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output 9" dstnodeid="27" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="2814" top="5426" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="dir_explosionBig">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output 10" dstnodeid="28" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="8270" top="3774" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="tex_sparkle">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output 7" dstnodeid="29" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="30">
+   <BOUNDS type="Node" left="3118" top="4978" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="dir_flameNew">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output 11" dstnodeid="30" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="3326" top="4474" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="dir_smokeNormal">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output 12" dstnodeid="31" dstpinname="Input Value">
+   </LINK>
+   </PATCH>
